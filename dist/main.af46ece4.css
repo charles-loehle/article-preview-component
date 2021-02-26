@@ -1,0 +1,19 @@
+/* Colors */
+:root {
+	--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+	--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+	--Grayish-Blue: hsl(212, 23%, 69%);
+	--Light-Grayish-Blue: hsl(210, 46%, 95%);
+	/* Body Copy */
+	--Font-size: 13px;
+	--Font-Family: (https://fonts.google.com/specimen/Manrope);
+	--med-font-weight: 500;
+	--bold-font-weight: 700;
+}
+
+body {
+	background-color: var(--Grayish-Blue);
+}
+
+
+/*# sourceMappingURL=/main.af46ece4.css.map */
