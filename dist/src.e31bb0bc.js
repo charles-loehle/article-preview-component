@@ -118,10 +118,23 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
+var avatar = document.querySelector('.avatar');
+var avatarText = document.querySelector('.avatar-text');
 var shareLinks = document.querySelector('.share-links');
 var active = document.querySelector('.active');
 var cardFooterAction = document.querySelector('.card-footer-action');
+var cardFooter = document.querySelector('.card-footer');
+var btn = document.querySelector('.card-footer-action');
 cardFooterAction.addEventListener('click', function () {
+  // console.log('test');
+  // 1. invert button shades
+  btn.classList.toggle('active'); // 2. change footer bg color to hsl(217, 19%, 35%);
+
+  cardFooter.classList.toggle('active'); // 3. toggle avatar and avatar-text display:block and display:none
+
+  avatar.classList.toggle('active');
+  avatarText.classList.toggle('active'); // 4. toggle .share-links display:none and display: grid
+
   shareLinks.classList.toggle('active');
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
