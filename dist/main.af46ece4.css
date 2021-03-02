@@ -238,6 +238,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 15%;
 	}
 
 	.card-footer-action {
@@ -247,11 +248,23 @@ body {
 	.share-links.active {
 		position: absolute;
 		top: -54px;
-		left: 272px;
+		left: 261px;
 		background-color: var(--Very-Dark-Grayish-Blue);
 		padding: 10px 37px;
 		width: 55%;
 		border-radius: 10px;
+	}
+
+	.share-links.active::before {
+		position: absolute;
+		bottom: -29px;
+		content: '';
+		left: 102px;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+		display: inline-block;
 	}
 }
 
