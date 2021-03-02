@@ -48,6 +48,7 @@ body {
 	max-width: 324px;
 	height: 512px;
 	border-radius: 10px;
+	box-shadow: 8px 20px 27px -6px lightgrey;
 }
 
 .card-body {
@@ -181,7 +182,7 @@ body {
 	width: 6%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 825px) {
 	.card {
 		height: 100%;
 		max-width: 730px;
